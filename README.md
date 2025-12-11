@@ -3,6 +3,7 @@
 This project integrates computer vision, AI-driven pathfinding, and robotic control to autonomously navigate and draw paths through a physical maze. Using a camera and the Dobot robotic arm, the system behaves as an intelligent agent that perceives → plans → acts, executing end-to-end maze solving with zero human intervention after setup.
 
 🔍 Key Features
+
 🧠 Vision-Based Maze Detection
 
 Automatically detects and deskews the maze from a live camera feed using OpenCV.
