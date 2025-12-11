@@ -1,34 +1,45 @@
-# Dobot-maze-solver-using-agnetic-ai
-This project integrates computer vision, pathfinding AI, and robotic control to autonomously navigate and draw paths through a physical maze. Using a camera and the Dobot robotic arm, the system acts as an intelligent agent that perceives, plans, and acts—executing end-to-end maze solving with no human intervention beyond setup.
-Key Features
+🚀 Dobot Maze Solver Using Agentic AI
 
-Vision-Based Maze Detection:
-Automatically detects and deskews the maze from a live camera feed using OpenCV. Grid lines, walls, and maze boundaries are identified dynamically through adaptive thresholding and line detection.
+This project integrates computer vision, AI-driven pathfinding, and robotic control to autonomously navigate and draw paths through a physical maze. Using a camera and the Dobot robotic arm, the system behaves as an intelligent agent that perceives → plans → acts, executing end-to-end maze solving with zero human intervention after setup.
 
-Color-Based Goal Identification:
-Locates red (start) and green (goal) markers within the maze using color segmentation in HSV space.
+🔍 Key Features
+🧠 Vision-Based Maze Detection
 
-AI Path Planning:
-Implements agentic pathfinder (perplexity_astar_agent) to compute the optimal wall-safe route from start to goal based on grid adjacency graphs.
+Automatically detects and deskews the maze from a live camera feed using OpenCV.
 
-Homography Calibration:
-Transforms pixel coordinates to real-world millimeter space using homography, ensuring accurate robot movements even if the camera is rotated or tilted.
+Identifies grid lines, walls, and boundaries via adaptive thresholding and line detection.
 
-Robotic Execution (Dobot Magician):
-Converts the AI-generated path into Dobot coordinates and commands the arm to draw the path physically on the maze using precise motion control (SAFE_Z and DRAW_Z levels).
+🎯 Color-Based Goal Identification
 
-Technical Stack
+Detects red (start) and green (goal) markers through HSV color segmentation.
 
-Computer Vision: OpenCV, NumPy
+🤖 AI Path Planning
 
-Pathfinding: A* Algorithm, AI agent variant
+Uses an agentic pathfinder (perplexity_astar_agent) implementing the A* algorithm.
 
-Robotics: Dobot SDK / Serial communication
+Computes an optimal, wall-safe route from start to goal using a grid-based adjacency graph.
 
-Coordinate Mapping: Homography transformation, pixel-to-mm calibration
+📐 Homography Calibration
 
-Language: Python
+Converts pixel coordinates to millimeter space using homography transformation.
 
-Outcome
+Maintains accuracy even when the camera is rotated or misaligned.
 
-The system demonstrates autonomous perception, reasoning, and action — key components of an Agentic AI pipeline. It successfully bridges virtual path planning and real-world robotic execution, showing how intelligent agents can understand and interact with their environments.
+🦾 Robotic Execution (Dobot Magician)
+
+Translates AI-planned paths into Dobot coordinates.
+
+Commands the arm to physically draw the solution path using precise movement control with SAFE_Z and DRAW_Z levels.
+
+🛠️ Technical Stack
+Component	Technologies
+Computer Vision	OpenCV, NumPy
+Pathfinding	A* Algorithm, Agentic AI
+Robotics	Dobot SDK, Serial Communication
+Coordinate Mapping	Homography, Pixel-to-mm Calibration
+Language	Python
+
+✅ Outcome
+
+This system showcases an Agentic AI pipeline that fully integrates perception, reasoning, and action.
+It successfully bridges digital path planning with real-world robotic execution, demonstrating how intelligent agents can interpret their environment and perform precise physical tasks autonomously.
