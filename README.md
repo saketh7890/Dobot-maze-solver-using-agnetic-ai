@@ -9,7 +9,7 @@ Color-Based Goal Identification:
 Locates red (start) and green (goal) markers within the maze using color segmentation in HSV space.
 
 AI Path Planning:
-Implements A* and an optional agentic pathfinder (perplexity_astar_agent) to compute the optimal wall-safe route from start to goal based on grid adjacency graphs.
+Implements agentic pathfinder (perplexity_astar_agent) to compute the optimal wall-safe route from start to goal based on grid adjacency graphs.
 
 Homography Calibration:
 Transforms pixel coordinates to real-world millimeter space using homography, ensuring accurate robot movements even if the camera is rotated or tilted.
